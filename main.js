@@ -11,19 +11,19 @@ form.addEventListener('submit', function(e){
 
 function adicionarlinha() {
     const inputNomeinserir = document.getElementById('nome-inserir');
-    const inputNumeroinserir = document.getElementById('numero-inserir');
+    const inputTelefoneinserir = document.getElementById('telefone-inserir');
 
     
     let linha = '<tr>'
     linha += `<td>${inputNomeinserir.value}</td>`;
-    linha += `<td>${inputNumeroinserir.value}</td>`;
+    linha += `<td>${inputTelefoneinserir.value}</td>`;
     linha += `<td>$</td>`;
     linha += `</tr>`
 
     linhas += linha;
 
     inputNomeinserir.value = '';
-    inputNumeroinserir = '';
+    inputTelefoneinserir.value= '';
 }
 
 function atualizaTabela () {
